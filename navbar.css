@@ -1,0 +1,124 @@
+.head {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    background: #EDF2F4;
+    top: 0;
+    justify-content: space-between;
+}
+
+#menu {
+    margin: 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#login {
+    margin: 15px;
+}
+
+#login button {
+    padding: 10px;
+    border-radius: 14px;
+    color: white;
+    background: #F2545B;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background: #19323C;
+}
+
+#logo {
+    position: fixed;
+    font-family: 'Zen Kurenaido', sans-serif;
+    cursor: pointer;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    background: #EDF2F4;
+    text-align: center;
+    top: -25px;
+    left: 43%;
+    color: #000;
+    border-radius: 50%;
+    padding: 10px;
+    padding-top: 65px;
+    letter-spacing: 4px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 10vh;
+    color: #fff;
+    background: #2A2B2A;
+    height: 90vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    color: #fff;
+    gap: 20px;
+    padding: 6px 23px;
+    margin-top: 30px;
+    font-size: 1.3em;
+    border: right 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.link_text {
+    white-space: nowrap;
+}
+
+.link:hover {
+    border-right: 4px solid #F2545B;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    background: #ebafb2;
+}
+
+.active {
+    border-right: 4px solid #F2545B;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    background: #ebafb2;
+}
+
+main {
+    position: fixed;
+    top: 10vh;
+    left: auto;
+    padding: 20px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+
+@media (max-width:999px) {
+    #logo {
+        left: 29%;
+    }
+
+    #main {
+        left: 0;
+    }
+
+    #card-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .side {
+        width: 16%;
+    }
+
+    .sidebar {
+        width: 0px;
+    }
+}
